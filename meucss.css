@@ -1,0 +1,335 @@
+/* Paleta de cores:
+#2703A6 - Roxo mais forte
+#201AD9 - Roxo Azulado
+#4945BF - Roxo suave
+#5E608C - Roxo Acinzentado
+#D9D9D9 - "Branco"
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+body{
+    overflow-x: hidden;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-weight: 300;
+}
+
+header {
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    background-color: #D9D9D9;
+}
+
+.nav{
+    align-self: center;
+    align-content: center;
+}
+
+a.nav-link{
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+#nav-ativo {
+    color: white;
+    background-color: #4945BF;
+}
+
+#nav-neutro {
+    color: white;
+    background-color: #5E608C;
+    transition: .2s ease-in-out
+}
+#nav-neutro:hover {
+    color: white;
+    background-color: #4945BF;
+}
+
+#left-headerside{
+    padding: 15px;
+}
+
+#main-title{
+    font-size: 30pt;
+    font-weight: 600;
+}
+
+#lower-title{
+    font-size: 14pt;
+    font-style: italic;
+}
+
+#title-icon{
+    position: relative;
+    top: -4px;
+    justify-self: center;
+    align-self: center;
+    width: 40px;
+    margin-right: 10px;
+}
+
+#nav-icon{
+    position: relative;
+    top: -1px;
+    justify-self: center;
+    align-self: center;
+    width: 25px;
+    margin-right: 5px;
+}
+
+.espaco-cabecalho{
+    width: 100%;
+    height: 200px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    background-color: #D9D9D9;
+}
+
+.footer-item{
+    font-weight: 400;
+    color:black;
+    transition: .2s ease-in-out
+}
+.footer-item:hover{
+    color:rgb(52, 21, 80);
+}
+
+.carousel{
+    position: relative;
+    filter: blur(2.5px);
+    justify-self: center;
+
+    bottom: 250px;
+
+    width: 175%;
+    height: 10%;
+}
+
+#carousel-text{
+    z-index: 4;
+    position: absolute;
+    color: #000000;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.349);
+    top: 450px;
+    left: 65px;
+    font-size: 30pt;
+
+}
+
+#topo-borrado{
+    position: relative;
+    width: 500%;
+    height: 125px;
+    background-color: #ffffff;
+    filter: blur(25px);
+    bottom: 75px;
+    right: 50px;
+}
+
+.container{
+    height: 750px;
+}
+
+/* cards de navegação */
+
+#fancy-welcome{
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#fancy-h1{
+    background-image: linear-gradient(to bottom, #635feb, #201AD9, #1d037c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    transition: .5s ease-in-out;
+}
+
+#fancy-h1:hover{
+    background-image: linear-gradient(to bottom, #1d037c, #201AD9, #635feb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+
+#welcome-paragraph{
+    font-size: 16pt;
+}
+
+#cards-navegacao{
+    width: 100%;
+    height: 250px;
+
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.c-card{
+    height: 275px;
+    background-color: #ffffff;
+    transition: .2s ease-in-out;
+}
+.c-card:hover{
+    height: 275px;
+    background-color: #ffffff;
+    transform: scale(1.1);
+}
+
+.card-subtitle{
+    font-style: italic;
+    font-size: 11pt;
+}
+
+.siteBody{
+    position:relative;
+    width: 100%;
+    background-color: white;
+    padding: 25px;
+}
+
+/* Sobre */
+
+#about-cards{
+    width: 75%;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+#about-card{
+    transition: .2s ease-in-out;
+}
+
+#about-card:hover{
+    transform: scale(1.1);
+
+}
+
+#resumo{
+    width: 75%;
+    font-size: 15pt;
+    padding: 10px;
+    justify-self: center;
+}
+
+#aligntoleft{
+    justify-self: left;
+    text-align: left;
+    margin-left: 25px;
+    width: 75%
+}
+
+#aligntoright{
+    justify-self: right;
+    text-align: right;
+    margin-right: 25px;
+    width: 75%
+}
+
+/* Apply */
+
+#apply-cards{
+    width: 90%;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+#bold{
+    font-weight: 500;
+}
+
+/* contact */
+
+
+.pfp {
+    width: 150px;
+    border-radius: 100px;
+    margin-bottom: 15px;
+    border: 10px solid #d9d9d9;
+    
+}
+#contact-card{
+    width: 45%;
+    justify-self: center;
+}
+
+.social-btn{
+    color:black;
+    background-color: #8d95ff;
+    border:none;
+    transition: .2s ease-in-out;
+}
+
+.social-btn:hover{
+    color:black;
+    background-color: #9a98ff;
+}
+
+#formulario{
+    width: 45%;
+    margin-bottom: 30px;
+    justify-self: center;
+}
+
+#opinion{
+    width: 100%;
+    height: 150px;
+}
+
+.btn-primary{
+    background-color: #8d95ff;
+    border:none;
+}
+
+.btn-primary:hover{
+    background-color: #9a98ff;
+}

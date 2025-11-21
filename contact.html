@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX/UI - Contact</title>
+    <!-- CSS do Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="shortcut icon" href="assets/icons/mail-active.png" type="image/x-icon">
+    <link rel="stylesheet" href="meucss.css">
+
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <!-- Parte esquerda do cabeçalho -->
+        <div id="left-headerside">
+            <p id="main-title"><img src="assets/icons/mail-title.png" id="title-icon">Contato</p>
+            <p id="lower-title">Sobre mim e meios de entrar em contato.</p>
+        </div>
+
+        <!-- Navegação (Parte direita) -->
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" id="nav-neutro" href="index.html"> <img src="assets/icons/home-idle.png"
+                        id="nav-icon"> Página inicial</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="nav-neutro" href="about.html"> <img src="assets/icons/info-idle.png" id="nav-icon">Sobre
+                    UX e UI</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="nav-neutro" href="apply.html"> <img src="assets/icons/code-idle.png" id="nav-icon">Como
+                    aplicar</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" id="nav-ativo" href="contact.html"> <img src="assets/icons/mail-active.png"
+                        id="nav-icon">Contato</a>
+            </li>
+        </ul>
+    </header>
+    <div class="espaco-cabecalho"></div>
+
+    <div id="fancy-welcome">
+        <h1 id="fancy-h1">Contato</h1>
+        <p id="welcome-paragraph">Nessa página, há um pouco sobre mim e como entrar em contato!</p>
+        <p id="welcome-paragraph">Agradeço por visitar minha página ♡</p>
+    </div>
+
+    <div id="contact-card">
+        <div class="card text-center">
+            <div class="card-header">
+                Créditos Ó . Ò'
+            </div>
+            <div class="card-body">
+                <img src="assets/images/pfp.png" alt="me:3" class="pfp">
+                <h5 class="card-title">Miguel Thomas</h5>
+                <p class="card-text">Programador, aprimorando e aprendendo; Descobri que gosto muito da programação depois de aprender JavaScript e brincar com o básico, tanto que hoje se tornou uma das minhas paixões, amo expressar minha criatividade através de linhas de código ♡</p>
+                <a href="https://www.youtube.com/@migmated" class="btn btn-primary social-btn" target="_blank"><img src="assets/icons/_youtube-icon.png" id="nav-icon">Meu YouTube</a>
+                <a href="https://github.com/ProgrammerMig" class="btn btn-primary social-btn" target="_blank"><img src="assets/icons/_github-icon.png" id="nav-icon">Meu GitHub</a>
+            </div>
+            <div class="card-footer text-body-secondary">
+                Itapevi/SP
+            </div>
+        </div>
+    </div>
+
+    <div id="fancy-welcome">
+        <p id="welcome-paragraph" style="font-style: italic;">ou, se preferir...</p>
+    </div>
+
+    <div id="formulario">
+        <form>
+            <h2>Me envie um e-mail!</h2>
+            <hr>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Nome</label>
+                <input type="name" class="form-control" id="exampleInputPassword1">
+            </div>
+            <hr>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"><span style="color:red">*</span> Endereço de e-mail</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                <div id="emailHelp" class="form-text" style="font-style: italic;">Não irei compartilhar seu endereço de e-mail com ninguém.</div>
+            </div>
+            <hr>
+            <div class="mb-3">
+                <label for="rate" class="form-label"><span style="color:red">*</span> Em uma escala de 1-5, qual foi sua experiência utilizando este site?</label>
+                <div id="rate" name="rate">
+                    <input type="radio" name="rate-1" id="rate-1"> 1 - Péssima <br>
+                    <input type="radio" name="rate-1" id="rate-1"> 2 - Ruim <br>
+                    <input type="radio" name="rate-1" id="rate-1"> 3 - Okay <br>
+                    <input type="radio" name="rate-1" id="rate-1"> 4 - Boa <br>
+                    <input type="radio" name="rate-1" id="rate-1"> 5 - Incrível
+                </div>  
+            </div>
+            <hr>
+            <div class="mb-3">
+                <label for="opinion" class="form-label"><span style="color:red">*</span> Escreva aqui sua opinião ou outro assunto.</label><br>
+                <textarea name="opinion" id="opinion" placeholder="Limite de caracteres: 1000" maxlength="1000" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar</button>
+        </form>
+    </div>
+
+
+
+    <!-- Rodapé -->
+    <footer>
+        <div id="footer-txt">
+            <p>Miguel Thomas; 1° Info; 2025© <br>
+                Feito para fins didádicos como projeto final bimestral.<br>
+                Professora Débora Paulo; ETEC Antônio Furlan - Barueri/SP</p>
+        </div>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link footer-item" href="https://github.com/ProgrammerMig" target="_blank"><img
+                        src="assets/icons/_github-icon.png" id="nav-icon"> GitHub</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link footer-item" href="https://www.youtube.com/@migmated" target="_blank"><img
+                        src="assets/icons/_youtube-icon.png" id="nav-icon"> YouTube</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link footer-item" href="#" onclick="alert('Não tenho X/Twitter ._.')"><img
+                        src="assets/icons/_x-icon.webp" id="nav-icon"> Twitter</a>
+            </li>
+        </ul>
+    </footer>
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
